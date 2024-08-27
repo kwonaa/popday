@@ -1,0 +1,76 @@
+body * {font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
+a {color: #000; text-decoration: none;}
+button {border: 0; border-radius: 0; background-color: transparent; cursor: pointer;}
+h1, h2, h3, b {background-color: transparent!important; color: #000!important;}
+
+/* header */
+.header {display: flex; justify-content: space-between; align-items: center; position: relative; width: 1024px; margin: 0 auto; text-align: center;}
+.header .left_tab {display: flex; align-items: center; gap: 2.5rem;}
+.header .logo {display: block;}
+.header .right_tab {display: flex; align-items: center; gap: 1rem;}
+.header .search_area {position: relative;}
+.header .search_input_box {position: absolute; top: 0; right: 40px; width: 0; height: 100%; overflow: hidden; transition: width 0.3s ease;}
+.header .search_input_box .search_input {width: 100%; padding: 5px 10px; border: 0; border-bottom: 2px solid #333; transition: box-shadow 0.3s ease; outline: none;}
+.header .search_input_box.active {width: 200px;}
+.header .btn_search {transition: color 0.3s ease;}
+.header .btn_search:hover {color: #ec98a4;}
+.header .btn_search i {padding: 2px 0; font-size: 22px;}
+.header .btn_sign_up i {font-size: 22px;}
+
+.main_nav .main_menu {display: flex; gap: 1rem;}
+.main_nav .main_menu .menu {padding: .5rem; font-size: 1.125rem;}
+
+.container {width: 1024px; margin: 0 auto;}
+.hot_popup_area {margin-bottom: 2rem;}
+.hot_popup_area .head_tit {display: flex; justify-content: space-between; align-items: center; margin: 1rem 0 ;}
+.hot_popup_area .head_tit .list_tit {font-size: 1.35rem; font-weight: bold;}
+.hot_popup_area .head_tit .link_more {font-size: .875rem;}
+.hot_popup_area .head_tit .link_more:hover {font-weight: bold;}
+
+/* swiper */
+.swiper_wrap {margin: 2rem 0;}
+.swiper {width: 1024px; height: 800px;}
+.swiper .swiper-slide img {width: 100%; height: 100%;}
+
+/* popup list */
+.popup_list {display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-gap: 20px;}
+.popup_list li {width: 100%; border: 1px solid #ececec; border-radius: 10px; overflow: hidden;}
+.popup_list li .thumb {position: relative; width: 100%; height: 140px; overflow: hidden;}
+.popup_list li .thumb a {display: block;}
+.popup_list li .thumb img {position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;}
+.popup_list li .thumb img:hover {border-radius: 10px; transition-duration: .2s; transform: scale(1.05)}
+.popup_list li .content {padding: 10px 10px;}
+.popup_list .popup_title {margin: 0 0 .25rem; font-size: 1.1rem; font-weight: bold; line-height: 1.2;}
+.popup_list .popup_text {font-size: .875rem; line-height: 1.5; color: #666;}
+.popup_list .popup_info {margin-top: 1.5rem;}
+.popup_list .popup_info p {font-size: .875rem; line-height: 1.5;}
+.popup_list .popup_info b {font-weight: bold;}
+
+.popup_list.type02 {position: relative;}
+.popup_list.type02 .content {display: block; position: absolute; bottom: 0; left: 0; right: 0; padding: 15px 18px; z-index: 10;}
+.popup_list.type02 li a {position: relative;}
+.popup_list.type02 li a::after {position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .65)); content: ""; z-index: 1;}
+.popup_list.type02 li .thumb {height: 280px;}
+.popup_list.type02 .popup_title {color: #fff;}
+.popup_list.type02 .popup_text {color: #fff;}
+
+/* content */
+.page_wrap {width: 1024px; margin: 0 auto;}
+.page_wrap .content_wrap {margin-top: 30px;}
+
+/* footer */
+.footer {position: relative; width: 1024px; margin: 40px auto 0;}
+.footer .footer_wrap {padding: 30px 0;}
+.footer .footer_wrap .link_info {display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;}
+.footer .footer_wrap .link_info .link_item a {font-size: .875rem;}
+
+@media (max-width: 767px) {
+	.header {width: 100%;}
+	
+	.container {width: 100%; padding: 15px 15px; box-sizing: border-box;}
+	.page_wrap {width: 100%;}
+	.page_wrap .content_wrap {width: 100%;}
+	
+	.footer {width: 100%;}
+	.footer .footer_wrap {padding: 30px 15px;}
+}

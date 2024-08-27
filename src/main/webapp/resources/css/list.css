@@ -1,0 +1,42 @@
+/* filter */
+/*.filter_area {margin-bottom: 2rem;}*/
+.filter_area .filter_group {display: flex; align-items: center; margin: 15px 0;}
+.filter_area .filter_group .filter_tab {display: flex; column-gap: 10px;}
+.filter_area .filter_group .filter_tit {width: 70px; margin-right: 15px; font-size: 20px; font-weight: bold;}
+.filter_area .filter_group .filter_tab button {min-width: 55px; height: 40px; padding: 0 12px; border: 1px solid #ddd; border-radius: 20px; font-size: 16px; color: #666;}
+.filter_area .filter_group .filter_tab button:hover {background-color: #eee;}
+.filter_area .filter_group .filter_tab button.selected {border: 1px solid #fd6a80; background-color: #ffdde2; font-weight: bold; color: #fd6a80;}
+.filter_area .filter_group .filter_tab button.selected:hover {background-color: #fdc9d1;}
+
+/* popup_list */
+.popup_list {display: flex;  flex-wrap: wrap; justify-content: space-between; gap: 1rem;}
+.popup_list .list_item {display: flex; width: 49%;} 
+.popup_list .list_item .tag {display: inline-block; width: fit-content; margin-right: 5px; padding: 5px 10px; border-radius: 20px; font-size: 12px; color: #fff; text-align: center;}
+.popup_list .list_item .tag.tag01 {background-color: #ff0000;}
+.popup_list .list_item .tag.tag02 {background-color: #999;}
+.popup_list .list_item .tag.tag03 {background-color: #111;}
+.popup_list .list_item .thumb {width: 180px; height: 180px;}
+.popup_list .list_item .popup_tit {width: 100%; margin: .5rem 0 0; font-size: 1.1rem; font-weight: bold; line-height: 1.2; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.popup_list .list_item .content {display: grid; grid-template-rows: auto 1fr; width: calc(100% - 180px); height: 100%; padding: 15px 20px; box-sizing: border-box;}
+.popup_list .list_item .content .place {font-size: 14px;}
+.popup_list .list_item .popup_info {margin-top: 0; align-self: end;}
+
+/* pagination */
+.pagination {display: flex; flex-direction: row; justify-content: center; margin-top: 3rem;}
+.pagination a {padding: 8px 16px; color: #666;}
+.pagination a.active {background-color: #ffdde2; color: #fd6a80;}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* button */
+.btn_area {margin-bottom: 10px; text-align: right;}
+.btn {width: 60px; height: 40px; border-radius: 8px; font-size: 16px;}
+.btn.btn_submit {border: 1px solid #fd6a80; background-color: #ffdde2; color: #fd6a80;}
+
+@media (max-width: 767px) {
+	.header {gap: 10px;}
+	.filter_area .filter_group .filter_tab {flex-wrap: wrap; row-gap: 10px;}
+	.filter_area .filter_group .filter_tab button {min-width: 55px;}
+	
+	.popup_list {justify-content: normal;}
+	.popup_list .list_item {width: 100%;}
+}

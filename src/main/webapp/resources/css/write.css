@@ -1,0 +1,51 @@
+/* popup info write */
+.create_info_area {display: flex; justify-content: space-between;}
+
+.create_info {width: 50%;}
+.create_info .section_tit {border-bottom: 1px solid #000;}
+.create_info .section_tit .tit {margin-bottom: 20px; padding-left: 15px; font-size: 1.3rem; font-weight: bold;}
+.create_info .section_con {margin-top: 20px; padding: 0 15px;}
+.create_info .create_input {margin-bottom: 20px;}
+.create_info .create_input li {display: flex; flex-direction: row; align-items: center; margin-bottom: 15px;}
+.create_info .create_input li:last-child {margin-bottom: 0;}
+.create_info .input_tit {width: 80px; margin-right: 5px; font-size: 16px; font-weight: bold;}
+.create_info .input_area {display: flex; justify-content: space-between; align-items: center; width: calc(100% - 85px); height: 36px; font-size: 16px;}
+.create_info .input_area span {display: inline-block;}
+.create_info .input_txt {width: 100%; height: 36px; padding: 0 10px; border: 0; border-radius: 5px; background-color: #f1f1f1; font-size: 14px; box-sizing: border-box; outline: none;}
+.create_info .input_txt.date {width: 47%; line-height: 36px;}
+.create_info .text_area {width: 100%;}
+.create_info .textarea {height: 400px; padding: 10px 10px; word-break: break-all; box-sizing: border-box; overflow-y: auto; resize: none;}
+.create_info .byte {margin-top: 5px; font-size: 13px; color: #666; text-align: right;}
+
+
+/* file upload */
+#imageView {display: flex; gap: 10px; max-width: 100%; box-sizing: border-box;}
+.image_area {width: 48%;}
+.image_area .input_image {width: 100%;}
+.image_area .input_image .img-thumbnail {padding: 0; border: 2px solid #ffdde2; border-radius: 20px;}
+.image_area .add_image {width: 100%; height: 300px; margin-bottom: 15px; border: 2px solid #ffdde2; border-radius: 20px;}
+.image_area .add_image img {width: 100%; height: 100%; object-fit: cover;}
+.image_area .image_wrap {display: inline-block; position: relative; width: 100%;}
+.image_area .image_wrap img {max-width: 100%; height: 100%; object-fit: cover; border: 2px solid #ffdde2; border-radius: 20px; box-sizing: border-box;}
+.image_area .btn_delete {position: absolute; top: 5px; right: 5px; border-radius: 50%; background-color: #666; color: #fff; width: 20px; height: 20px;}
+.image_area .btn_delete:hover {background-color: #000;}
+
+.btn_area {display: flex; justify-content: flex-end; column-gap: 10px;}
+.btn_area button {width: 60px; padding: 10px 15px; border:1px solid #ddd; border-radius: 10px; font-weight: bold;}
+.btn_area button:hover {background-color: #eee;}
+.btn_area .btn_reset {border:1px solid #ddd;}
+.btn_area .btn_submit {border: 1px solid #fd6a80; background-color: #ffdde2; color: #fd6a80;}
+.btn_area .btn_submit:hover {background-color: #fdc9d1;}
+
+.page_wrap.view .create_info .input_area {justify-content: flex-start;}
+.page_wrap.view .create_info .input_area .tilde {margin: 0 5px;}
+.page_wrap.view .text_area p {font-size: 14px; line-height: 1.5; word-break: break-all;}
+.page_wrap.view .swiper {width: 100%; height: 300px;}
+
+@media (max-width: 767px) {
+  .create_info_area {flex-flow: column; justify-content: normal;}
+  .create_info {width: 100%; margin-top: 20px;}
+  .image_area {width: 100%;}
+  
+  .btn_area {justify-content: center;}
+}

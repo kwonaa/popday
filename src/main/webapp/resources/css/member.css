@@ -1,0 +1,35 @@
+/* common */
+.hidden {display: none;}
+.btn {width: 100%; height: 40px; border-radius: 8px; font-size: 16px;}
+.btn.btn_submit {background-color: #ffdde2;}
+.btn.btn_gray {background-color: #f1f1f1; line-height: 40px;}
+.msg_login {margin-top: 30px; font-size: 14px; color: #ff0000; text-align: center;}
+
+/* member */
+.member_wrap {width: 450px; margin: 100px auto; padding: 40px 40px; border: 1px solid #ddd; border-radius: 10px; box-sizing: border-box;}
+.member_wrap .member_tit {font-size: 1.5rem; text-align: center;}
+.member_wrap .member_box {display: flex; flex-direction: column; gap: 15px; margin-top: 20px;}
+.member_wrap .member_box .box_item {border-bottom: 2px solid #ddd;}
+.member_wrap .member_box .box_item .input {position: relative; width: 100%; height: 40px; padding: 5px 10px; border: 0; font-size: 16px;}
+.member_wrap .member_box .box_item .input:focus {outline: none;}
+.member_wrap .member_box .re_check {display: flex; align-items: center; gap: 15px;}
+.member_wrap .member_box .re_check .box_item {flex: 1 1 0%;}
+.member_wrap .member_box .btn_check {width: 80px; height: 40px; border-radius: 5px; background-color: #eee;}
+.member_wrap .btn_area {margin-top: 30px; text-align: center;}
+.member_wrap .btn_area a.btn {display: block;}
+.member_wrap .btn_area .btn:last-child {margin-top: 10px;}
+
+/* popup */
+.recheck_popup {padding: 15px 15px;}
+.recheck_popup .popup_tit {margin-bottom: 30px;font-size: 18px; font-weight: bold; text-align: center;}
+.recheck_popup .recheck_box {display: flex; align-items: center; gap: 10px;}
+.recheck_popup .recheck_box input {position: relative; width: 100%; height: 40px; padding: 5px 10px; border: 1px solid #ddd; font-size: 16px; box-sizing: border-box;}
+.recheck_popup .recheck_box .btn_submit {display: block; width: 100%; height: 40px; border-radius: 8px; background-color: #f1f1f1; font-size: 16px;}
+.recheck_popup .btn_area {margin-top: 15px;}
+.recheck_popup .recheck_box .btn {width: 80px;}
+.recheck_popup .msg_login {margin-top: 15px;}
+
+@media (max-width: 767px) {
+	.container {width: 100%; padding: 20px 20px;}
+	.member_wrap {max-width: 450px; width: 100%;}
+}
